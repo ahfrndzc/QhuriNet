@@ -1045,3 +1045,289 @@ body:has(#login:target) footer {
   font-size: 14px;
   margin-bottom: 22px;
 }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.login-form label {
+  font-size: 14px;
+  color: #2b4444;
+}
+
+.login-form input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 2px solid #c6d6a0;
+  background: #cbe4ab;
+  font-size: 14px;
+  color: #213;
+}
+
+.btn-login {
+  background: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transition: background .2s ease;
+}
+.btn-login:hover { background: #89a640; }
+
+.divider {
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.social-login {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.btn-social { 
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s;
+}
+.btn-social:hover { background: #f3f3f3; }
+
+.forgot { 
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--verde);
+  text-decoration: none;
+}
+.forgot:hover { text-decoration: underline; }
+
+#registro { display: none; }
+#registro:target { display: block; }
+
+body:has(#registro:target) #inicio,
+body:has(#registro:target) #servicios,
+body:has(#registro:target) #nosotros,
+body:has(#registro:target) #contacto,
+body:has(#registro:target) #soporte,
+body:has(#registro:target) #mapa,
+body:has(#registro:target) #beneficios,
+body:has(#registro:target) #impacto,
+body:has(#registro:target) #chat,
+body:has(#registro:target) #gestion,
+body:has(#registro:target) #login,
+body:has(#registro:target) footer {
+  display: none;
+}
+
+.registro-section {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.registro-wrap {
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+.registro-brand {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+.registro-sub {
+  color: #45615d;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.registro-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  padding: 32px 42px;
+}
+
+.registro-card h2 {
+  font-size: 20px;
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+.welcome {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.registro-form label {
+  font-size: 14px;
+  color: #2b4444;
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 2px solid #c6d6a0;
+  background: #cbe4ab;
+  font-size: 14px;
+  color: #213;
+}
+
+.checkbox-terms { 
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #6a7a6a;
+}
+.checkbox-terms input {
+  margin-right: 8px;
+  accent-color: var(--verde);
+}
+
+.btn-register-form {
+  background: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transition: background .2s ease;
+}
+.btn-register-form:hover { background: #89a640; }
+
+.divider { /* separador de "o regístrate con" */ 
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.social-login { 
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.btn-social {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s;
+}
+.btn-social:hover { background: #f3f3f3; }
+
+#contacto { display: block; } 
+#contacto:target { display: block; }
+
+body:has(#contacto:target) #inicio,
+body:has(#contacto:target) #servicios,
+body:has(#contacto:target) #nosotros,
+body:has(#contacto:target) #soporte,
+body:has(#contacto:target) #mapa,
+body:has(#contacto:target) #beneficios,
+body:has(#contacto:target) #impacto,
+body:has(#contacto:target) #chat,
+body:has(#contacto:target) #gestion,
+body:has(#contacto:target) #login,
+body:has(#contacto:target) #registro {
+  display: none;
+}
+
+body:has(#contacto:target) footer {
+  display: block;
+}
+
+#servicios { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px 60px;                        
+    justify-items: center;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 22px;
+    padding: 32px 20px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(24, 40, 12, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    min-height: 300px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
