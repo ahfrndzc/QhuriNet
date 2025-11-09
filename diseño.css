@@ -1,1 +1,222 @@
+:root {
+    --verde: #98B44C;
+    --verde-oscuro: #2C5055; 
+    --bg1: #ffffff; 
+    --card-bg: #ffffff;
+    --muted: #6b6b6b;
+    --max-width: 1200px;
+    --accent: #dfead0; 
+} 
 
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: var(--verde-oscuro);
+    background: var(--bg1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}  
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+.header-content{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 24px;
+} 
+.brand{display:flex; align-items:center; gap:12px; text-decoration:none} 
+.logo{height:36px; display:block}
+.brand-name{font-weight:700; font-size:22px; color:var(--verde-oscuro)}
+
+.nav-main{flex:1; display:flex; justify-content:center} 
+.nav-main ul{list-style:none; display:flex; gap:64px; margin:0; padding:0}
+.nav-main a{color:var(--verde-oscuro); text-decoration:none; font-weight:700; font-size:20px}
+.nav-main a:hover{opacity:.85} 
+
+.auth{display:flex; align-items:center; gap:22px} 
+.login-link{color:var(--verde-oscuro); text-decoration:none; font-size:14px; font-weight:500}
+.login-link:hover{opacity:.85}
+
+.btn-register{ 
+  background: var(--verde);
+  color:#fff;
+  text-decoration:none;
+  padding:10px 18px;
+  border-radius:12px;          
+  font-weight:600;
+  font-size:14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08); 
+}
+.btn-register:hover{filter:brightness(0.95)} 
+
+@media (max-width: 900px){ 
+  .nav-main ul{gap:28px}
+  .nav-main a{font-size:16px; font-weight:600}
+  .brand-name{font-size:18px}
+  .logo{height:32px}
+}
+@media (max-width: 640px){
+  .header-content{flex-wrap:wrap; row-gap:12px}
+  .nav-main{order:3; flex:1 1 100%}
+  .nav-main ul{justify-content:center; flex-wrap:wrap; gap:18px}
+} 
+nav ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+nav a { 
+    text-decoration: none;
+    color: var(--verde-oscuro);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.has-dropdown { position: relative; }
+.has-dropdown > a { position: relative; }
+
+.nav-main .dropdown{ 
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: 8px 0;
+  min-width: 260px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  display: none;
+  z-index: 100;
+  list-style: none;     
+  margin: 0;           
+}
+
+.has-dropdown:hover > .dropdown { display: block; }
+
+.nav-main .dropdown li{
+  position: static;          
+  display: block;            
+  line-height: 1.2;
+}
+
+.nav-main .dropdown li + li::before{ display: none; }
+
+.nav-main .dropdown a{
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.nav-main .dropdown a:hover{
+  background: var(--accent); 
+}
+
+/* Ocultar el resto si hay una sección Explora seleccionada */
+
+body:has(#mapa:target),
+body:has(#beneficios:target),
+body:has(#impacto:target),
+body:has(#chat:target),
+body:has(#gestion:target) {
+  /* nada aquí, el selector lo usamos para encadenar abajo */
+}
+
+body:has(#mapa:target)    #inicio,
+body:has(#mapa:target)    #servicios,
+body:has(#mapa:target)    #nosotros,
+body:has(#mapa:target)    #contacto,
+body:has(#mapa:target)    #soporte,
+body:has(#beneficios:target) #inicio,
+body:has(#beneficios:target) #servicios,
+body:has(#beneficios:target) #nosotros,
+body:has(#beneficios:target) #contacto,
+body:has(#beneficios:target) #soporte,
+body:has(#impacto:target) #inicio,
+body:has(#impacto:target) #servicios,
+body:has(#impacto:target) #nosotros,
+body:has(#impacto:target) #contacto,
+body:has(#impacto:target) #soporte,
+body:has(#chat:target)    #inicio,
+body:has(#chat:target)    #servicios,
+body:has(#chat:target)    #nosotros,
+body:has(#chat:target)    #contacto,
+body:has(#chat:target)    #soporte,
+body:has(#gestion:target) #inicio,
+body:has(#gestion:target) #servicios,
+body:has(#gestion:target) #nosotros,
+body:has(#gestion:target) #contacto,
+body:has(#gestion:target) #soporte{
+  display: none;
+}
+
+.section {
+  padding: 80px 0;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.section.explora-section {
+  display: none;          
+  background: #ffffff;
+  padding: 72px 0;
+}
+
+.section.explora-section:target {
+  display: flex;          
+  align-items: center;
+}
+
+.explora-title{
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin: 0 0 10px;
+}
+.explora-desc{
+  text-align: center;
+  color: var(--muted);
+  max-width: 800px;
+  margin: 6px auto 0;
+}
+
+.section.default-bg { background: var(--bg1); }
+
+#inicio, #nosotros { background: #ffffff; }
+
+.section.hero {
+    min-height: 100vh;              
+    padding: 0;                     
+    display: flex;
+    align-items: center;            
+    justify-content: center;        
+    background: #ffffff;            
+    box-sizing: border-box;
+}
