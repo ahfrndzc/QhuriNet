@@ -1,0 +1,150 @@
+
+.registro-section {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.registro-wrap {
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+.registro-brand {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+.registro-sub {
+  color: #45615d;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.registro-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  padding: 32px 42px;
+}
+
+.registro-card h2 {
+  font-size: 20px;
+  color: var(--verde-oscuro);
+  margin-bottom: 8px;
+}
+
+.welcome {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.registro-form label {
+  font-size: 14px;
+  color: #2b4444;
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 2px solid #c6d6a0;
+  background: #cbe4ab;
+  font-size: 14px;
+  color: #213;
+}
+
+.checkbox-terms { 
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #6a7a6a;
+}
+.checkbox-terms input {
+  margin-right: 8px;
+  accent-color: var(--verde);
+}
+
+.btn-register-form {
+  background: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transition: background .2s ease;
+}
+.btn-register-form:hover { background: #89a640; }
+
+.divider { /* separador de "o regístrate con" */ 
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.social-login { 
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.btn-social {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s;
+}
+.btn-social:hover { background: #f3f3f3; }
+
+/* Estilo del combobox de tipo de usuario */
+.registro-form select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 2px solid #c6d6a0;
+  background: #cbe4ab;
+  font-size: 14px;
+  color: #213;
+  cursor: pointer;
+}
+
+.registro-form select:focus {
+  outline: none;
+  border-color: var(--verde);    /* usa tu variable de color */
+}
+ 
