@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QhuriNet | Reciclaje Colaborativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />  
+    <link rel="stylesheet" href="css/contacto.css" />  
+    <link rel="stylesheet" href="css/footer.css" />  
+</head> 
+
+<body>
+
+    <div id="slot-header"></div>
+    
+    <main>
+
+        <section id="contacto" class="section contact-section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+
+                <div class="contact-card">
+                <form id="contactForm" class="contact-form" action="/IHC/procesar_form.php" method="POST">
+                    <div class="contact-left">
+                    <div class="input-group">
+                        <label for="nombres">Nombres:</label>
+                        <input id="nombres" type="text" name="nombres" placeholder="Ingresa tus nombres" autocomplete="given-name" autocapitalize="words"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input id="apellidos" type="text" name="apellidos" placeholder="Ingresa tus apellidos" autocomplete="family-name" autocapitalize="words"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="correo">Correo:</label>
+                        <input id="correo" type="email" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email"/>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="terminos"> Acepto los términos y condiciones</label>
+                        <label><input type="checkbox" name="datos"> Acepto otorgar mis datos personales</label>
+                    </div>
+                    <button class="btn-primary btn-right" type="submit">Enviar</button>
+                    </div>
+
+                    <div class="contact-right">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="slot-footer"></div>
+    <script src="js/include.js"></script>
+</body>
+</html> 

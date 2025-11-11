@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QhuriNet | Reciclaje Colaborativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />  
+    <link rel="stylesheet" href="css/inicio.css" />  
+    <link rel="stylesheet" href="css/servicios.css" />  
+    <link rel="stylesheet" href="css/nosotros.css" />  
+    <link rel="stylesheet" href="css/contacto.css" />  
+    <link rel="stylesheet" href="css/footer.css" />  
+</head> 
+
+<body>
+
+    <div id="slot-header"></div> 
+
+    <main>
+
+        <section id="inicio" class="section hero">
+            <div class="hero-content">
+                <h1>Transforma tu ciudad con</h1>
+                <h1>reciclaje colaborativo</h1>
+                <p>QhuriNet es la plataforma que une a las personas para crear un ecosistema de reciclaje más eficiente y sustentable.</p>
+            </div>
+            <div class="hero-img">
+                <img src="img/reciclaje.png" alt="reciclaje"> 
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/mapa.png" alt="Mapa Interactivo">
+                        <h3>Mapa interactivo de reciclaje</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/gestion.png" alt="Gestión de Materiales">
+                        <h3>Gestión de materiales reciclables</h3> 
+                    </div>
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/recoleccion.png" alt="Recolección colaborativa">
+                        <h3>Recolección colaborativa</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/incentivos.png" alt="Sistema de Incentivos">
+                        <h3>Sistema de incentivos y gamificación</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/estadistica.png" alt="Panel de Estadísticas">
+                        <h3>Panel de estadísticas y reportes</h3>
+                    </div>
+                    <div class="card">
+                        <img class="card-icon" src="img/servicios/educacion.png" alt="Educación ambiental">
+                        <h3>Educación y comunidad ambiental</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="section">
+            <div class="container about">
+                <h2>Nosotros</h2>
+                <p>
+                    En SamiForce, creemos que reciclar debe ser una acción simple, confiable y trazable.
+                    Nacimos como una startup ambiental comprometida con la innovación tecnológica y la sostenibilidad,
+                    desarrollando QhuriNet, una plataforma que conecta ciudadanos, bodegas y recicladores para hacer del
+                    reciclaje una práctica cotidiana, transparente y colaborativa.
+                    Nuestra meta es cerrar la brecha entre la intención y la acción, impulsando un Perú más limpio y circular.
+                </p>
+
+                <div class="about-split">
+                    <div class="about-block">
+                        <h3>Misión</h3>
+                        <p>
+                            Facilitar el reciclaje colaborativo conectando a quienes generan materiales con quienes los recuperan,
+                            mediante tecnología accesible, diseño centrado en las personas y datos abiertos.
+                        </p>
+                    </div>
+
+                    <div class="about-block">
+                        <h3>Visión</h3>
+                        <p>
+                            Ser referentes en reciclaje colaborativo en Latinoamérica, promoviendo un ecosistema urbano más
+                            consciente, eficiente y sostenible.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="valores-title">Valores</h3>
+                <div class="valores-grid">
+                    <div class="valor-item">♻️ Sostenibilidad y economía circular</div>
+                    <div class="valor-item">💡 Innovación responsable</div>
+                    <div class="valor-item">🔒 Confianza y seguridad</div>
+                    <div class="valor-item">🤝 Inclusión y accesibilidad</div>
+                    <div class="valor-item">📊 Transparencia basada en datos</div>
+                    <div class="valor-item">🌍 Impacto tangible</div>
+                    <div class="valor-item">📚 Aprendizaje continuo</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact-section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+
+                <div class="contact-card">
+                <form id="contactForm" class="contact-form" action="/IHC/procesar_form.php" method="POST">
+                    <div class="contact-left">
+                    <div class="input-group">
+                        <label for="nombres">Nombres:</label>
+                        <input id="nombres" type="text" name="nombres" placeholder="Ingresa tus nombres" autocomplete="given-name" autocapitalize="words"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="apellidos">Apellidos:</label>
+                        <input id="apellidos" type="text" name="apellidos" placeholder="Ingresa tus apellidos" autocomplete="family-name" autocapitalize="words"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="correo">Correo:</label>
+                        <input id="correo" type="email" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email"/>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="terminos"> Acepto los términos y condiciones</label>
+                        <label><input type="checkbox" name="datos"> Acepto otorgar mis datos personales</label>
+                    </div>
+                    <button class="btn-primary btn-right" type="submit">Enviar</button>
+                    </div>
+
+                    <div class="contact-right">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="slot-footer"></div> 
+
+    <script src="js/include.js"></script>
+</body>
+</html> 
