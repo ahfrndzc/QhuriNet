@@ -1,0 +1,65 @@
+.beneficios-section{
+  background: radial-gradient(1700px 780px at 80% 0%, #e7f1d9 0%, #d2e3b4 55%, #bed58d 100%);
+  padding: 60px 0 0; /* que el degradado llegue al footer */
+}
+
+.beneficios-wrap{ max-width: 1180px; }
+
+.beneficios-grid{
+  display: grid;
+  grid-template-columns: 1.05fr 1fr; /* texto / teléfonos */
+  gap: 36px;
+  align-items: start;
+}
+
+.beneficios-title{
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin: 0 0 18px;
+}
+
+.beneficios-p{
+  color: #1e3334;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+.beneficios-p strong{ font-weight: 800; }
+
+.beneficios-cta{
+  margin-top: 8px;
+  font-size: 18px;
+  color: #0f201f;
+}
+
+.beneficios-phones{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+  justify-items: center;
+}
+.beneficios-phones .phone{
+  width: 100%;
+  max-width: 360px;      
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 26px rgba(0,0,0,.18));
+  border-radius: 16px;   
+}
+
+@media (max-width: 1100px){
+  .beneficios-title{ font-size: 48px; }
+}
+@media (max-width: 980px){
+  .beneficios-grid{ grid-template-columns: 1fr; gap: 28px; }
+  .beneficios-phones{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px){
+  .beneficios-title{ font-size: 42px; }
+  .beneficios-p, .beneficios-cta{ font-size: 16px; }
+  .beneficios-phones{ grid-template-columns: 1fr; }
+  .beneficios-phones .phone{ max-width: 380px; }
+}
