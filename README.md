@@ -16,7 +16,6 @@ El objetivo principal de QhuriNet es **fomentar la conciencia ambiental** y prom
 QhuriNet está dirigido a:
 - Ciudadanos interesados en el reciclaje y la sostenibilidad.
 - Bodegas y pequeños comercios que deseen integrarse a la cadena de recolección de residuos.
-- Instituciones educativas o municipales que promuevan la gestión responsable de materiales reciclables.
 
 ---
 
@@ -47,9 +46,9 @@ QhuriNet está dirigido a:
 ---
 
 ## Tecnologías Utilizadas
-- **HTML5**
-- **CSS3 (Grid y Flexbox)**
-- **JavaScript (ES6 / Fetch API)**
+- **HTML**
+- **CSS**
+- **JavaScript**
 - **Git y GitHub Pages** para despliegue y colaboración.
 
 ---
