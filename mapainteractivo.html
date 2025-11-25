@@ -3,54 +3,103 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QhuriNet | Reciclaje Colaborativo</title>
+    <title>QhuriNet | Mapa Interactivo</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/mapa.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/chatbot.css"/>
+
+    <link rel="stylesheet" href="css/global.css" />  
+    <link rel="stylesheet" href="css/mapa.css" />  
+    <link rel="stylesheet" href="css/footer.css" />  
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head> 
 
 <body>
 
     <div id="slot-header"></div>
-
+    
     <main>
 
         <section id="mapa" class="section explora-section mapa-section">
-        <div class="container mapa-wrap">
-            <div class="mapa-grid">
-            <div class="mapa-copy">
-                <h2 class="mapa-title">Mapa Interactivo</h2>
+            <div class="container mapa-wrap">
+                <div class="mapa-grid">
 
-                <p class="mapa-lead">
-                Con el mapa interactivo de QhuriNet puedes encontrar
-                fácilmente los puntos de recolección más cercanos y ver la
-                disponibilidad de recolectores en tiempo real.<br>
-                Desde esta sección podrás:
-                </p>
+                    <div class="mapa-copy">
+                        <h2 class="mapa-title">Mapa Interactivo</h2>
+                        <p class="mapa-lead">
+                            Con el mapa interactivo de QhuriNet puedes encontrar
+                            fácilmente los puntos de recolección más cercanos y ver la
+                            disponibilidad de recolectores en tiempo real.<br>
+                            Desde esta sección podrás:
+                        </p>
 
-                <ul class="mapa-list">
-                <li>Ubicar bodegas, puntos ecológicos y recolectores activos en tu zona.</li>
-                <li>Filtrar por tipo de material (plástico, vidrio, papel, metal, etc.).</li>
-                <li>Seleccionar un punto para programar o confirmar una recolección.</li>
-                <li>Ver rutas y tiempos estimados de llegada del recolector.</li>
-                </ul>
-            </div>
+                        <ul class="mapa-list">
+                            <li>Ubicar bodegas, puntos ecológicos y recolectores activos en tu zona.</li>
+                            <li>Filtrar por tipo de punto o material.</li>
+                            <li>Ver rutas y tiempos estimados par dirigirse a una dirección.</li>
+                        </ul>
+                    </div>
 
-            <div class="mapa-phone">
-                <img src="img/mockup-telefono.png" alt="App QhuriNet - Mapa" />
+                    <div class="mapa-phone">
+
+                        <div id="mapa-interactivo">
+
+                            <div id="ruta-floating" class="ruta-floating oculto">
+                                <p class="ruta-floating-title">Detalles de ruta</p>
+                                <p id="ruta-distancia">Distancia total: --</p>
+                                <p id="ruta-tiempo">Tiempo estimado: --</p>
+                                <p>Orden de visita:</p>
+                                <ol id="ruta-orden"></ol>
+
+                                <button id="ruta-reset" class="ruta-reset-btn">
+                                    Nueva ruta
+                                </button>
+
+                                <p style="font-size:11px; margin-top:6px; color:#6b7b7f;">
+                                    Selecciona puntos del mapa.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="filtros-puntos">
+                            <span class="filtros-titulo">Tipo de punto:</span>
+
+                            <label>
+                                <input type="checkbox" id="filtro-acopio">
+                                <span class="cuadro tipo-acopio"></span>
+                                Comercio de Acopio
+                            </label>
+
+                            <label>
+                                <input type="checkbox" id="filtro-bodega">
+                                <span class="cuadro tipo-bodega"></span>
+                                Comercio/Bodega
+                            </label>
+
+                            <label>
+                                <input type="checkbox" id="filtro-reciclador">
+                                <span class="cuadro tipo-reciclador"></span>
+                                Reciclador
+                            </label>
+
+                            <label>
+                                <input type="checkbox" id="filtro-municipal">
+                                <span class="cuadro tipo-municipal"></span>
+                                Municipal
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-            </div>
-        </div>
         </section>
-
     </main>
-
     <div id="slot-footer"></div>
     <script src="js/include.js"></script>
-    <div id="slot-chatbot"></div>
-
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/mapainteractivo.js"></script>
     <script src="js/chatbot.js"></script>
 </body>
-</html
+</html>
