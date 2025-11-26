@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #98B44C; 
+  background: #2c5055; 
   color: #fff;
   font-size: 24px;
   transition: all 0.2s ease;
@@ -46,7 +46,7 @@ body.show-chatbot .chatbot-container {
 
 
 .chat-header {
-  background: #98B44C; 
+  background: #2c5055; 
   color: #fff;
   padding: 8px 15px;
   display: flex;
@@ -68,7 +68,7 @@ body.show-chatbot .chatbot-container {
 
 .chatbox .outgoing { margin: 20px 0; justify-content: flex-end; }
 .chatbox .outgoing p {
-  background: #98B44C; 
+  background: #2c5055; 
   color: #fff;
   border-radius: 10px 10px 0 10px;
 }
@@ -76,7 +76,7 @@ body.show-chatbot .chatbot-container {
 
 .chatbox .incoming span {
   width: 32px; height: 32px; color: #fff;
-  align-self: flex-end; background: #98B44C; text-align: center; line-height: 32px; border-radius: 4px; margin: 0 10px 7px 0;
+  align-self: flex-end; background: #2c5055; text-align: center; line-height: 32px; border-radius: 4px; margin: 0 10px 7px 0;
 }
 .chatbox .incoming p {
   background: #f2f2f2;

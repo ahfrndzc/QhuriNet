@@ -46,7 +46,7 @@ function iniciarLogicaChatbot() {
         
         setTimeout(() => {
             if (chatStep === 0) {
-                messageElement.textContent = "✅ DNI registrado correctamente. \n\nAhora, por favor, describe brevemente tu caso o problema:";
+                messageElement.textContent = "✅ Correo registrado correctamente. \n\nAhora, por favor, describe brevemente tu caso o problema:";
                 chatStep = 1; 
             } else if (chatStep === 1) {
                 messageElement.innerHTML = "Entendido. Basado en tu descripción, aquí tienes algunas soluciones rápidas:<br><br>🔹 <b>Opción A:</b> Revisa nuestra sección de preguntas frecuentes.<br>🔹 <b>Opción B:</b> Reinicia la aplicación.<br><br>Si esto no ayuda, un asesor humano revisará tu caso pronto.";
@@ -63,13 +63,20 @@ function iniciarLogicaChatbot() {
         if(!userMessage) return;
 
         
+        
         if (chatStep === 0) {
-            const esDNIValido = /^\d{8}$/.test(userMessage);
-            if (!esDNIValido) {
+            
+            const esCorreoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userMessage);
+            
+            if (!esCorreoValido) {
+                
                 chatInput.value = "";
+                
                 chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+                
+                
                 setTimeout(() => {
-                    const errorMsg = "⚠️ Error: El DNI debe ser un número de 8 dígitos.";
+                    const errorMsg = "⚠️ Error: Por favor ingresa un correo válido (ejemplo: usuario@gmail.com).";
                     chatbox.appendChild(createChatLi(errorMsg, "incoming"));
                     chatbox.scrollTo(0, chatbox.scrollHeight);
                 }, 600);
