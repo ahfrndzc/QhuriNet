@@ -74,7 +74,6 @@
 .marker-reciclador { background-color: #E46D6A; }
 .marker-municipal  { background-color: #51738D; }
 
-/* UBICACIÓN SIMULADA */
 .marker-ubicacion{
   width: 32px;
   height: 32px;
@@ -97,6 +96,11 @@
   background: white;
   border-radius: 50%;
 }
+.mapa-phone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
 
 .filtros-puntos{
   background: #ffffff;
@@ -108,13 +112,27 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px 18px;
-  align-items: center;
+  align-items: flex-start;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 430px;      
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filtros-titulo{
   font-weight: 700;
-  margin-right: 4px;
+  margin-right: 0;
+  flex-basis: 100%;
+  margin-bottom: 4px;
+}
+
+.filtros-puntos label{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  flex: 0 0 45%;  
 }
 
 .cuadro{
@@ -129,7 +147,7 @@
 .tipo-reciclador{ background:#f6c0c0; }
 .tipo-municipal { background:#c2d0de; }
 
-/* PANEL FLOTANTE EN EL MAPA */
+
 .ruta-floating{
   position: absolute;
   top: 10px;
