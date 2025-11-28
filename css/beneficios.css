@@ -1,65 +1,227 @@
-.beneficios-section{
-  background: radial-gradient(1700px 780px at 80% 0%, #e7f1d9 0%, #d2e3b4 55%, #bed58d 100%);
-  padding: 60px 0 0; /* que el degradado llegue al footer */
+.beneficios-section {
+  background: linear-gradient(180deg, #f5f8eb 0%, #d7e7b4 100%);
+  padding: 60px 0 40px;
+  color: #1e3334;
 }
 
-.beneficios-wrap{ max-width: 1180px; }
+.beneficios-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
 
-.beneficios-grid{
+.beneficios-layout {
   display: grid;
-  grid-template-columns: 1.05fr 1fr; /* texto / teléfonos */
-  gap: 36px;
+  grid-template-columns: 1.1fr 0.9fr; 
+  gap: 40px;
   align-items: start;
 }
 
-.beneficios-title{
-  font-size: 56px;
-  line-height: 1.05;
+.beneficios-title {
+  font-size: 48px;
+  color: var(--verde-oscuro);
+  margin-bottom: 24px;
+}
+
+.beneficios-wrap p {
+  font-size: 17px;
+}
+
+.beneficios-imagenes {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+.beneficio-img {
+    width: 300px;     
+    height: auto;
+    display: block;
+}
+
+.beneficio-img-1 {
+    margin-top: 55px;   
+}
+
+.beneficio-img-2 {
+    margin-top: 20px;
+}
+  
+
+.beneficio-img-2-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descargar-certificado {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #1e3334;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.descargar-certificado:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 960px) {
+  .beneficios-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios-imagenes {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .beneficios-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .beneficios-title {
+    font-size: 30px;
+  }
+
+  .beneficios-wrap p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .beneficios-imagenes {
+    flex-direction: column; 
+  }
+}
+
+.beneficios-subsection {
+  background: #f5f8eb;        
+  padding: 56px 0 60px;
+  color: #1e3334;
+}
+
+.recordatorios-wrap,
+.puntos-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.subtitulo-principal {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.1;
   font-weight: 800;
   color: var(--verde-oscuro);
-  margin: 0 0 18px;
+  margin-bottom: 18px;
 }
 
-.beneficios-p{
-  color: #1e3334;
-  font-size: 18px;
+.subtitulo-lead {
+  font-size: 17px;
   line-height: 1.7;
-  margin: 0 0 18px;
-}
-.beneficios-p strong{ font-weight: 800; }
-
-.beneficios-cta{
-  margin-top: 8px;
-  font-size: 18px;
-  color: #0f201f;
+  max-width: 960px;
+  margin: 0 auto 10px;
+  text-align: left;
 }
 
-.beneficios-phones{
+#recordatorios {
+    background: #E6EFD3;    
+}
+
+.recordatorios-grid {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.recordatorio-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  padding: 16px 18px 20px;
+  max-width: 360px;
+  text-align: center;
+}
+
+.recordatorio-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.recordatorio-caption {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.puntos-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  align-items: end;
-  justify-items: center;
-}
-.beneficios-phones .phone{
-  width: 100%;
-  max-width: 360px;      
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 10px 26px rgba(0,0,0,.18));
-  border-radius: 16px;   
+  gap: 48px;
+  margin-top: 40px;
+  align-items: flex-start;
 }
 
-@media (max-width: 1100px){
-  .beneficios-title{ font-size: 48px; }
+.puntos-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
-@media (max-width: 980px){
-  .beneficios-grid{ grid-template-columns: 1fr; gap: 28px; }
-  .beneficios-phones{ grid-template-columns: 1fr 1fr; }
+
+.puntos-title {
+  font-size: 39px; 
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--verde-oscuro);
 }
-@media (max-width: 680px){
-  .beneficios-title{ font-size: 42px; }
-  .beneficios-p, .beneficios-cta{ font-size: 16px; }
-  .beneficios-phones{ grid-template-columns: 1fr; }
-  .beneficios-phones .phone{ max-width: 380px; }
+
+.puntos-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  padding: 16px 18px 20px;
+}
+
+.puntos-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 960px) {
+  .puntos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .puntos-wrap {
+    padding-bottom: 20px;
+  }
+
+  .subtitulo-principal {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .recordatorios-wrap,
+  .puntos-wrap {
+    padding: 0 20px;
+  }
+
+  .puntos-title {
+    font-size: 24px;
+  }
+
+  .subtitulo-lead {
+    font-size: 15px;
+  }
 }
