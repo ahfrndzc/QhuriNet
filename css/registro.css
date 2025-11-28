@@ -132,7 +132,6 @@
 }
 .btn-social:hover { background: #f3f3f3; }
 
-/* Estilo del combobox de tipo de usuario */
 .registro-form select {
   padding: 10px 12px;
   border-radius: 6px;
@@ -145,6 +144,20 @@
 
 .registro-form select:focus {
   outline: none;
-  border-color: var(--verde);    /* usa tu variable de color */
+  border-color: var(--verde);   
 }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #45615d;           
+  text-decoration: none;  
+}
+
+.back-link:hover {
+  text-decoration: underline; 
+}
+ 
  
