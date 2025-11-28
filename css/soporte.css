@@ -54,3 +54,16 @@
   .soporte-title{ font-size:40px; }
   .soporte-grid{ grid-template-columns: 1fr; }
 }
+
+.mensaje-estado {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.mensaje-estado.exito {
+  color: #1b7c3b;          
+}
+.mensaje-estado.error {
+  color: #c0392b;         
+}
