@@ -321,7 +321,6 @@ footer { font-family: inherit; color: #fff; }
 }
 .nav-main a:hover{ opacity:.85; }
 
-/* Asegura que en páginas internas el contenido no esté oculto */
 main > section {
   display: block;
   visibility: visible;
