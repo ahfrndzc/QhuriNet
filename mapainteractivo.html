@@ -26,19 +26,15 @@
                 <div class="mapa-grid">
 
                     <div class="mapa-copy">
-                        <h2 class="mapa-title">Mapa Interactivo</h2>
+                        <h2 class="mapa-title">Explora y planifica tus rutas de reciclaje</h2>
                         <p class="mapa-lead">
-                            Con el mapa interactivo de QhuriNet puedes encontrar
-                            fácilmente los puntos de recolección más cercanos y ver la
-                            disponibilidad de recolectores en tiempo real.<br>
-                            Desde esta sección podrás:
+                            Con el mapa de QhuriNet puedes ubicar puntos de reciclaje 
+                            cercanos, revisar qué materiales acepta cada uno, aplicar 
+                            filtros para ver solo los que necesitas y generar rutas 
+                            optimizadas entre varias ubicaciones. Además, podrás 
+                            consultar distancia, tiempo estimado y el orden sugerido de 
+                            visita para planificar tu recorrido de forma eficiente.<br>
                         </p>
-
-                        <ul class="mapa-list">
-                            <li>Ubicar bodegas, puntos ecológicos y recolectores activos en tu zona.</li>
-                            <li>Filtrar por tipo de punto o material.</li>
-                            <li>Ver rutas y tiempos estimados par dirigirse a una dirección.</li>
-                        </ul>
                     </div>
 
                     <div class="mapa-phone">
@@ -96,12 +92,70 @@
                 </div>
             </div>
         </section>
+
+        <section class="mapa-busqueda">
+            <div class="container busqueda-wrap"> 
+            <h2 class="busqueda-title"> 
+                Búsqueda y detalles de puntos de reciclaje 
+            </h2>
+
+            <p class="busqueda-lead"> 
+            El buscador te permite localizar puntos de recolección rápidamente ingresando un nombre o una dirección.
+            Además, bajo el mapa se muestra una lista organizada con cada punto disponible, incluyendo su ubicación, los materiales que acepta 
+            y su calificación.
+            Al elegir uno de ellos, se despliega una ficha detallada para ayudarte a comparar opciones y decidir dónde realizar tu entrega.
+            </p>
+
+            <div class="busqueda-media">
+                <img src="img/mapa-busqueda.png" 
+                    alt="Mapa de busqueda" 
+                    class="busqueda-img">  
+            </div>
+            </div>
+        </section>
+
+        <section class="mapa-rutas">
+            <div class="container rutas-wrap">
+
+                <h2 class="rutas-title">Rutas personalizadas</h2>
+
+                <p class="rutas-lead">
+                    Las rutas personalizadas te permiten guardar los recorridos 
+                    que armas en el mapa, asignándoles un nombre y una breve 
+                    descripción. Luego, podrás acceder a una lista organizada 
+                    con todas tus rutas guardadas, visualizar sus detalles y 
+                    cargarlas nuevamente cuando las necesites, facilitando tus 
+                    futuras jornadas de reciclaje.
+                </p>
+
+                <div class="rutas-grid-top">
+                    <img src="img/rutas-1.png"
+                         alt="Vista de creación de ruta"
+                         class="rutas-img-small">
+
+                    <span class="rutas-arrow">➜</span>
+
+                    <img src="img/rutas-2.png"
+                         alt="Formulario para guardar ruta"
+                         class="rutas-img-small">
+                </div>
+
+                <div class="rutas-grid-bottom">
+                    <img src="img/rutas-3.png"
+                         alt="Lista de rutas guardadas"
+                         class="rutas-img-wide">
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
     <div id="slot-footer"></div>
     <script src="js/include.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/mapainteractivo.js"></script>
-    <div id="slot-chatbot"></div>
+    <div id="slot-footer"></div> 
     <script src="js/chatbot.js"></script>
 </body>
 </html>
