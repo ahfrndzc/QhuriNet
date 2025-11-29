@@ -60,17 +60,25 @@
 
 .perfil-card-text {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.9;
   color: #223c3d;
   text-align: center;
-  margin: 0 0 18px;
+  margin: 10px 0 10px;
 }
 
-.perfil-card-img {
+.perfil-card-img-1 {
   width: 100%;
   height: auto;
   display: block;
   margin-top: 10px;
+  border-radius: 18px;
+}
+
+.perfil-card-img-2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
   border-radius: 18px;
 }
 
