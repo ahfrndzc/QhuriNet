@@ -8,7 +8,7 @@
 
 .impacto2-title{
   text-align: center;
-  font-size: 56px;
+  font-size: 48px;
   line-height: 1.05;
   font-weight: 800;
   color: var(--verde-oscuro);
@@ -36,10 +36,7 @@
 
 .impacto2-card{
   background: #fff;
-  border: 2px solid #a0ab90;  
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
-  overflow: hidden;
+  overflow: hidden; 
 }
 .impacto2-card img{ display:block; width:100%; height:auto; }
 
