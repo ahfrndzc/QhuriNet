@@ -41,7 +41,7 @@
 }
 
 .beneficio-img-1 {
-    margin-top: 55px;   
+    margin-top: 20px;   
 }
 
 .beneficio-img-2 {
@@ -100,8 +100,10 @@
   }
 }
 
+/* === Sub-secciones debajo de Beneficios === */
+
 .beneficios-subsection {
-  background: #f5f8eb;        
+  background: #f5f8eb;        /* mismo tono claro que la parte baja del gradiente */
   padding: 56px 0 60px;
   color: #1e3334;
 }
@@ -129,6 +131,8 @@
   margin: 0 auto 10px;
   text-align: left;
 }
+
+/* ---- Recordatorios y logros ---- */
 
 #recordatorios {
     background: #E6EFD3;    
@@ -163,6 +167,8 @@
   font-weight: 600;
 }
 
+/* ---- Puntuaciones e historial ---- */
+
 .puntos-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,6 +202,8 @@
   width: 100%;
   height: auto;
 }
+
+/* Responsivo */
 
 @media (max-width: 960px) {
   .puntos-grid {
