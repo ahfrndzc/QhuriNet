@@ -46,8 +46,8 @@ function iniciarLogicaChatbot() {
         
         setTimeout(() => {
             if (chatStep === 0) {
-                messageElement.textContent = "✅ Correo registrado correctamente. \n\nAhora, por favor, describe brevemente tu caso o problema:";
-                chatStep = 1; 
+                messageElement.textContent = "✅ Hemos validado tu cuenta. Tu correo existe en nuestra base de datos. \n\nAhora, por favor, describe brevemente tu caso o problema:";
+                chatStep = 1;  
             } else if (chatStep === 1) {
                 messageElement.innerHTML = "Entendido. Basado en tu descripción, aquí tienes algunas soluciones rápidas:<br><br>🔹 <b>Opción A:</b> Revisa nuestra sección de preguntas frecuentes.<br>🔹 <b>Opción B:</b> Reinicia la aplicación.<br><br>Si esto no ayuda, un asesor humano revisará tu caso pronto.";
                 chatStep = 2; 
