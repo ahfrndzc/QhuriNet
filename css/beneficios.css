@@ -132,6 +132,10 @@
   text-align: left;
 }
 
+#historial-puntos .puntos-col .subtitulo-lead {
+  min-height: 140px;
+}
+
 /* ---- Recordatorios y logros ---- */
 
 #recordatorios {
